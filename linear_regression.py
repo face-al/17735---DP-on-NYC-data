@@ -28,7 +28,7 @@ for epsilon in epsilons:
 plt.loglog(epsilons, accuracy, label="Differentially private linear regression", zorder=10)
 plt.loglog(epsilons, baseline * np.ones_like(epsilons), dashes=[2,2], label="Non-private baseline", zorder=5)
 plt.xlabel("epsilon")
-plt.ylabel("r-squared score")
+plt.ylabel("Mean Absolute Error")
 plt.ylim(100, 10 ** 7)
 plt.xlim(epsilons[0], epsilons[-1])
 plt.legend(loc=2) 

@@ -24,7 +24,7 @@ plt.plot(index, predict, label="Differentially private with epsilon ***", zorder
 plt.plot(index, baseline, label="baseline", zorder=10)
 plt.xlabel("Location Data")
 plt.ylabel("Target")
-plt.ylim(-500, 2000)
+plt.ylim(-1000, 4000)
 plt.xlim(0, len(X_test))
 plt.legend(loc=2)
 
