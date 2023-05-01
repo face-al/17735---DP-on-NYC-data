@@ -18,7 +18,7 @@ accuracy = []
 for epsilon in epsilons:
     regr = sk_LinearRegression()
     # Specify mechanism to use
-    temp = geometric(X_train, epsilon)
+    temp = laplace(X_train, epsilon)
     regr.fit(temp, y_train)
     accuracy.append(regr.score(X_test, y_test))
 
